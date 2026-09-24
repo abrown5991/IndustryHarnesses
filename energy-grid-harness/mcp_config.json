@@ -1,0 +1,35 @@
+{
+  "_comment": "Placeholder registry of MCP servers this harness WOULD connect to in production. The grid_tools.py mocks stand in for these today. To go live: stand up (or point at) each MCP server, then replace the corresponding mock in grid_tools.py with a Strands MCPClient that calls the server's tools. See https://strandsagents.com for MCP client wiring.",
+  "mcpServers": {
+    "scada-ems": {
+      "description": "SCADA/EMS telemetry and historian access (real-time bus voltage, frequency, power flow, breaker status).",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/scada-ems/mcp",
+      "status": "PLACEHOLDER"
+    },
+    "oms": {
+      "description": "Outage Management System — active outages, affected customers, crew status, restoration ETAs.",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/oms/mcp",
+      "status": "PLACEHOLDER"
+    },
+    "iso-market": {
+      "description": "ISO/RTO market data (LMP, system load, reserves) for CAISO/PJM/ERCOT etc.",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/iso-market/mcp",
+      "status": "PLACEHOLDER"
+    },
+    "weather": {
+      "description": "Weather feed for demand forecasting and grid-stress signals (heat, wind, storms).",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/weather/mcp",
+      "status": "PLACEHOLDER"
+    },
+    "work-order": {
+      "description": "Work-order / asset-management system for drafting maintenance and switching orders (human-approved).",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/work-order/mcp",
+      "status": "PLACEHOLDER"
+    }
+  }
+}

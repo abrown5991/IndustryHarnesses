@@ -1,0 +1,47 @@
+{
+  "_comment": "Placeholder registry of MCP servers this harness WOULD connect to in production. The research_tools.py mocks stand in for these today. To go live: stand up (or point at) each MCP server, then replace the corresponding mock in research_tools.py with a Strands MCPClient that calls the server's tools. See https://strandsagents.com for MCP client wiring.",
+  "mcpServers": {
+    "pubmed": {
+      "description": "Biomedical literature — PubMed / Europe PMC citations and abstracts.",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/pubmed/mcp",
+      "status": "PLACEHOLDER"
+    },
+    "ncbi-gene": {
+      "description": "Gene / variant / pathway lookup via NCBI Gene, Ensembl, UniProt.",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/ncbi-gene/mcp",
+      "status": "PLACEHOLDER"
+    },
+    "chembl": {
+      "description": "Small-molecule bioactivity via ChEMBL / PubChem — targets, IC50/Ki, mechanism.",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/chembl/mcp",
+      "status": "PLACEHOLDER"
+    },
+    "pdb-alphafold": {
+      "description": "Protein structure — RCSB PDB experimental structures and AlphaFold DB predictions.",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/pdb-alphafold/mcp",
+      "status": "PLACEHOLDER"
+    },
+    "lims": {
+      "description": "LIMS / screening / omics platform — assay results, plate maps, QC (Benchling, Genedata, or in-house).",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/lims/mcp",
+      "status": "PLACEHOLDER"
+    },
+    "clinicaltrials": {
+      "description": "Clinical-trial landscape via ClinicalTrials.gov / WHO ICTRP.",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/clinicaltrials/mcp",
+      "status": "PLACEHOLDER"
+    },
+    "eln": {
+      "description": "Electronic Lab Notebook for draft entries (Benchling, LabArchives) — scientist signs and commits.",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/eln/mcp",
+      "status": "PLACEHOLDER"
+    }
+  }
+}

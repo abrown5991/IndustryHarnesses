@@ -1,0 +1,17 @@
+[project]
+name = "life-sciences-harness"
+version = "0.1.0"
+description = "Industry harness for Life Sciences — Research Scientists, deployable to Amazon Bedrock AgentCore Runtime."
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "httpx",
+    "strands-agents",
+    "strands-agents-tools",
+    "boto3",
+]
+
+[tool.uv]
+package = false

@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# uv
+uv.lock
+
+# Build / logs
+build.log
+*.log
+dist/
+build/
+
+# macOS
+.DS_Store
+
+# AWS / secrets — never commit credentials
+.env
+.env.*
+*.pem
+*.key
+aws-credentials*

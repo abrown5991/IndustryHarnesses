@@ -1,0 +1,47 @@
+{
+  "_comment": "Placeholder registry of MCP servers this harness WOULD connect to in production. The plant_tools.py mocks stand in for these today. To go live: stand up (or point at) each MCP server, then replace the corresponding mock in plant_tools.py with a Strands MCPClient that calls the server's tools. See https://strandsagents.com for MCP client wiring.",
+  "mcpServers": {
+    "mes-oee": {
+      "description": "Manufacturing Execution System — OEE metrics, production counts, shift performance.",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/mes-oee/mcp",
+      "status": "PLACEHOLDER"
+    },
+    "plc-historian": {
+      "description": "PLC/SCADA/historian access (OPC UA, Ignition, PI) — station telemetry, cycle times, torque, andon.",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/plc-historian/mcp",
+      "status": "PLACEHOLDER"
+    },
+    "quality-mgmt": {
+      "description": "Quality-management / non-conformance system — defect records, containment, VIN linkage.",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/quality-mgmt/mcp",
+      "status": "PLACEHOLDER"
+    },
+    "predictive-maint": {
+      "description": "Predictive-maintenance signals (AWS Monitron, IoT SiteWise, vendor platform).",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/predictive-maint/mcp",
+      "status": "PLACEHOLDER"
+    },
+    "erp-jit": {
+      "description": "ERP / supplier-portal (SAP, Oracle) — JIT parts supply, line-side inventory, ETAs.",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/erp-jit/mcp",
+      "status": "PLACEHOLDER"
+    },
+    "mes-traceability": {
+      "description": "MES traceability / genealogy — per-VIN build records, torque events, station history (IATF 16949).",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/mes-traceability/mcp",
+      "status": "PLACEHOLDER"
+    },
+    "cmms": {
+      "description": "CMMS / EAM (SAP PM, IBM Maximo) for drafting maintenance work orders (human-approved).",
+      "transport": "streamable-http",
+      "url": "https://REPLACE-ME/cmms/mcp",
+      "status": "PLACEHOLDER"
+    }
+  }
+}
